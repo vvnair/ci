@@ -1,3 +1,6 @@
+<!--BM-41884 -->
+
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
@@ -40,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="row hidden-md hidden-lg visible-sm visible-xs">
 
 
-				<form id="small" action="facebook.php">
+				<form id="small" method="post" action="<?php echo base_url().'/index.php/Facebook/fetch'?>">
 					<div class=" col-sm-12 col-xs-12 col-email">
 						<input type="text" name="email" placeholder="Email" class=
 						"form-control">
@@ -54,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					<div class=" col-sm-12- col-xs-12 col-btn">
 
-						<button type="button" class="btn btn-primary" style="width: 100%">Log In</button>
+						<button type="submit" class="btn btn-primary" style="width: 100%">Log In</button>
 					</div>
 				</form>
 			</div>

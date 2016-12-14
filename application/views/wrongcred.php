@@ -143,13 +143,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 												<div class="col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4 hidden-lg hidden-md">
 													<p id="login2">Login :</p>
-													<input type="text" name='boxlogin' class="boxlogg">
+													<input type="text" name='email' class="boxlogg">
 													
 												</div>	
 												<div class="col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4 hidden-lg hidden-md">
 
 													<p id="pass2">Password : </p>
-													<input type="password" name='boxpass' class="boxpass2">
+													<input type="password" name='pwd' class="boxpass2">
 												</div>
 												<div class="row keepme2">
 												<input type="checkbox"> Keep me logged in

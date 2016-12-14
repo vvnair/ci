@@ -254,21 +254,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<img src="<?php echo base_url().'image/kat.jpg';?>" class="img2">
 					<p id="name">Kathakali<br>info@baabtra.com</p>
 					<p id="not">Not Kathakali?</p>
+					<form action="<?php echo base_url().'/index.php/Facebook/fetch'?>" method="post">
+					<input type="hidden" name="email" value="user">
 					<p id="pass">Password :</p>
 					<div class="password">
-					<input type="text" name="password" class="pwd">
+					<input type="password" name="pwd" class="pwd">
 					</div>
 					<div class="cb">
 						<input type="checkbox"><p class="check">Keep me logged in</p>
 					</div>
 					<div class="row btnlogin">
-						<button type="button" class="btn2 btn btn-primary">Log In</button>
+						<button type="submit" class="btn2 btn btn-primary">Log In</button>
 						
 					</div>
 					<div class="in">
 					<p>or<p id="inside">Sign Up on Facebook</p></p>
 					</div>
 					<p id="fp">Forgot password?</p>
+					</form>
 
 
 				</div>
@@ -301,21 +304,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				 	<p id="para3">Not Kathakali?</p>
 				 	<p id="para4">Kathakali<br>info@baabtra.com</p>	
 				 	<p id="mobpass">Password : </p>
-				 	<form>
-				 		<input type="password" name="mobpass" class="mobpass1" >
+				 	<form method="post" action="<?php echo base_url().'/index.php/Facebook/fetch'?>">
+				 		<input type="hidden" name="email" value="info@baabtra.com">
+				 		<input type="password" name="pwd" class="mobpass1" >
 				 		
-				 	</form>
+				 	
 				 	<div>
 				 		<input type="checkbox" class="cb2"><p id="para5">Keep me logged in</p>
 				 	</div>
 
-						<button type="button" class="btnmob2 btn btn-primary btn-sm">Log In</button>
+						<button type="submit" class="btnmob2 btn btn-primary btn-sm">Log In</button>
 						
 					<div class="in2">
 					<p>or<p id="inside2">Sign Up on Facebook</p></p>
 					</div>
 					<p id="forgotmob">Forgot password?</p>
-
+					</form>
 
 
 				</div>
